@@ -1,0 +1,8 @@
+{
+  "config": {
+    "title": "Simple Icons",
+    "abort": {
+      "single_instance_allowed": "Es ist nur eine Instanz von Simple Icons erlaubt."
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+    "domain": "simpleicons",
+    "name": "Simple Icons",
+    "documentation": "",
+    "dependencies": ["frontend"],
+    "codeowners": [],
+    "requirements": [],
+    "config_flow": true
+}
