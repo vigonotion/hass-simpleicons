@@ -2,7 +2,7 @@
 
 [![hacs_badge](https://img.shields.io/badge/HACS-Default-orange.svg)](https://github.com/custom-components/hacs)
 
-Use free icons from the [simpleicons](https://simpleicons.com) set in Home Assistant.
+Use free icons from the [simpleicons](https://simpleicons.org) set in Home Assistant.
 
 ## Installation instructions
 
