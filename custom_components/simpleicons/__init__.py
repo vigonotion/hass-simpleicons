@@ -1,6 +1,6 @@
 import homeassistant.components.frontend
 from homeassistant.components.frontend import _frontend_root
-
+from homeassistant.config_entries import SOURCE_IMPORT
 from .custom_component_server import setup_view
 
 DOMAIN = "simpleicons"
@@ -13,9 +13,16 @@ ICON_FILES = {
 
 async def async_setup(hass, config):
     setup_view(hass, DOMAIN)
-    conf = config.get(DOMAIN)
-    if not conf:
+    
+    if DOMAIN not in config:
         return True
+    
+    hass.async_create_task(
+        hass.config_entries.flow.async_init(
+            DOMAIN, context={"source": SOURCE_IMPORT}
+        )
+    )
+
     register_modules(hass)
     return True
 
