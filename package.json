@@ -14,7 +14,7 @@
   "devDependencies": {
     "raw-loader": "^4.0.1",
     "webpack": "^4.41.2",
-    "webpack-cli": "^3.3.11"
+    "webpack-cli": "^3.3.12"
   },
   "dependencies": {
     "simple-icons": "^2.19.0"
