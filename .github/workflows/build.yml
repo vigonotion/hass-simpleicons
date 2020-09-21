@@ -24,6 +24,6 @@ jobs:
       uses: EndBug/add-and-commit@v4
       with:
         message: "Update si.js"
-        add: "js/si.js"
+        add: "custom_components/simpleicons/data/si.js"
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
