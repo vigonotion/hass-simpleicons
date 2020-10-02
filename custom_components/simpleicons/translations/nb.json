@@ -1,0 +1,8 @@
+{
+  "config": {
+    "title": "Simple Icons",
+    "abort": {
+      "single_instance_allowed": "Bare en enkelt konfigurasjon av simpleicons er tillatt."
+    }
+  }
+}
