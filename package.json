@@ -12,7 +12,7 @@
   "author": "Tom Schneider",
   "license": "MIT",
   "devDependencies": {
-    "raw-loader": "^4.0.1",
+    "raw-loader": "^4.0.2",
     "webpack": "^4.44.2",
     "webpack-cli": "^4.2.0"
   },
