@@ -6,13 +6,17 @@ from .custom_component_server import setup_view
 DOMAIN = "simpleicons"
 
 DATA_EXTRA_MODULE_URL = 'frontend_extra_module_url'
-ICONS_URL = '/'+DOMAIN+'/data/'
+ICONS_URL = '/'+DOMAIN+'/'
 ICON_FILES = {
     'simpleicons': 'si.js'
 }
 
 async def async_setup(hass, config):
-    setup_view(hass, DOMAIN)
+    hass.http.register_static_path(
+        f"/{DOMAIN}/si.js",
+        hass.config.path(f"custom_components/{DOMAIN}/data/si.js"),
+        True
+    )
     
     if DOMAIN not in config:
         return True
