@@ -1,7 +1,6 @@
 import homeassistant.components.frontend
 from homeassistant.components.frontend import _frontend_root
 from homeassistant.config_entries import SOURCE_IMPORT
-from .custom_component_server import setup_view
 
 DOMAIN = "simpleicons"
 
