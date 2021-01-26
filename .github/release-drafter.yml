@@ -9,6 +9,23 @@ categories:
     label: fix
   - title: 🧰 Maintenance
     label: chore
+    
+version-resolver:
+  major:
+    labels:
+      - 'major'
+      - 'feature'
+  minor:
+    labels:
+      - 'minor'
+      - 'fix'
+  patch:
+    labels:
+      - 'patch'
+      - 'dependencies'
+      - 'chore'
+  default: patch
+  
 template: |
   ## Changes
 
