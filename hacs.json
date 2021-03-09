@@ -1,5 +1,7 @@
 {
     "name": "simpleicons",
     "render_readme": true,
-    "homeassistant": "0.110.0b0"
+    "homeassistant": "0.110.0b0",
+    "zip_release": true,
+    "filename": "hass-simpleicons.zip"
 }
