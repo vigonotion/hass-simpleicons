@@ -28,13 +28,13 @@ jobs:
       - name: ZIP simpleicons Dir
         run: |
           cd ${{ github.workspace }}/custom_components/simpleicons
-          zip simpleicons.zip -r ./
+          zip hass-simpleicons.zip -r ./
       - name: Upload zip to release
         uses: svenstaro/upload-release-action@v1-release
 
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
-          file: ${{ github.workspace }}/custom_components/simpleicons/simpleicons.zip
-          asset_name: simpleicons.zip
+          file: ${{ github.workspace }}/custom_components/simpleicons/hass-simpleicons.zip
+          asset_name: hass-simpleicons.zip
           tag: ${{ github.ref }}
           overwrite: true
