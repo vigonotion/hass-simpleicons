@@ -17,6 +17,6 @@
     "webpack-cli": "^4.4.0"
   },
   "dependencies": {
-    "simple-icons": "^4.16.0"
+    "simple-icons": "^4.17.0"
   }
 }
