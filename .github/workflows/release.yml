@@ -27,6 +27,7 @@ jobs:
       # Pack the simpleicons dir as a zip and upload to the release
       - name: ZIP simpleicons Dir
         run: |
+          rm hass-simpleicons.zip
           cd ${{ github.workspace }}/custom_components/simpleicons
           zip hass-simpleicons.zip -r ./
       - name: Upload zip to release
