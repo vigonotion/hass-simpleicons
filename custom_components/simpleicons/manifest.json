@@ -1,7 +1,7 @@
 {
     "domain": "simpleicons",
     "name": "Simple Icons",
-    "documentation": "",
+    "documentation": "https://github.com/vigonotion/hass-simpleicons",
     "dependencies": ["frontend"],
     "codeowners": [],
     "requirements": [],
