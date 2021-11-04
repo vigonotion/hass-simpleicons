@@ -4,6 +4,7 @@
     "name": "Simple Icons",
     "documentation": "https://github.com/vigonotion/hass-simpleicons",
     "dependencies": [
+        "http",
         "frontend"
     ],
     "codeowners": [],
