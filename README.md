@@ -36,6 +36,10 @@ Yes.
 simpleicons:
 ```
 
+### Is there a HowTo Video available?
+
+Yes, in german you find it here: https://youtu.be/vGEgIbVzMYw (by Tristan)
+
 ## Special thanks
 
 This work is heavily based on [hass-fontawesome](https://github.com/thomasloven/hass-fontawesome) by Thomas Loven. Thank you!
