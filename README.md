@@ -1,6 +1,6 @@
 # hass-simpleicons
 
-[![hacs_badge](https://img.shields.io/badge/HACS-Default-orange.svg)](https://github.com/custom-components/hacs)
+[![hacs_badge](https://img.shields.io/badge/HACS-Default-orange.svg)]([https://github.com/custom-components/hacs](https://github.com/hacs/integration))
 
 Use free icons from the [simpleicons](https://simpleicons.org) set in Home Assistant.
 
