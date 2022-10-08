@@ -25,3 +25,7 @@ updates:
     - 5.24.2
     - 5.24.3
     - 5.24.4
+- package-ecosystem: "pip"
+  directory: "/"
+  schedule:
+    interval: "daily"
