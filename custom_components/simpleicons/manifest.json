@@ -9,7 +9,7 @@
     ],
     "codeowners": [],
     "requirements": [
-        "simpleicons==6.16.0"
+        "simpleicons==6.23.0"
     ],
     "config_flow": true,
     "version": "0.0.0"
