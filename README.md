@@ -12,6 +12,9 @@ Use free icons from the [simpleicons](https://simpleicons.org) set in Home Assis
 
 - Go to your integrations configuration and add simpleicons
 
+- In your Lovelace Configuration, add the following entry:
+  `/config/custom_components/simpleicons/data/si.js`
+
 ## Usage
 
 Find the icon you want in the [gallery](http://simpleicons.org/). Click on an icon. This will download the icon. You don't need that file, just it's filename.
