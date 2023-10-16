@@ -1,0 +1,9 @@
+{
+  "title": "Simple Icons",
+  "config": {
+    "abort": {
+      "single_instance_allowed": "Je povolená iba jedna konfigurácia Simple Icons."
+    },
+    "step": {}
+  }
+}
