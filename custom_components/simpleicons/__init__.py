@@ -2,6 +2,7 @@ import homeassistant.components.frontend
 from homeassistant.components.frontend import _frontend_root
 from homeassistant.config_entries import SOURCE_IMPORT
 from homeassistant.components.http.view import HomeAssistantView
+from homeassistant.components.http import StaticPathConfig
 
 from simpleicons.all import icons
 import json
@@ -40,11 +41,12 @@ class ListView(HomeAssistantView):
 
 
 async def async_setup(hass, config):
-    hass.http.register_static_path(
-        f"/{DOMAIN}/si.js",
-        hass.config.path(f"custom_components/{DOMAIN}/data/si.js"),
-        True,
-    )
+    await hass.http.async_register_static_paths([
+        StaticPathConfig("/simpleicons/si.js",
+                         "/config/custom_components/simpleicons/data/si.js", True
+                         )
+        ])
+
 
     hass.http.register_view(ListView())
 
