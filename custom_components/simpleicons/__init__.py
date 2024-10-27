@@ -16,7 +16,6 @@ ICON_FILES = {"simpleicons": "si.js"}
 
 
 class IconView(HomeAssistantView):
-
     requires_auth = False
 
     def __init__(self, slug):
@@ -29,7 +28,6 @@ class IconView(HomeAssistantView):
 
 
 class ListView(HomeAssistantView):
-
     requires_auth = False
 
     def __init__(self):
@@ -41,12 +39,15 @@ class ListView(HomeAssistantView):
 
 
 async def async_setup(hass, config):
-    await hass.http.async_register_static_paths([
-        StaticPathConfig("/simpleicons/si.js",
-                         "/config/custom_components/simpleicons/data/si.js", True
-                         )
-        ])
-
+    await hass.http.async_register_static_paths(
+        [
+            StaticPathConfig(
+                f"/{DOMAIN}/si.js",
+                hass.config.path(f"custom_components/{DOMAIN}/data/si.js"),
+                True,
+            )
+        ]
+    )
 
     hass.http.register_view(ListView())
 
