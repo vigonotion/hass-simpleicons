@@ -36,6 +36,9 @@ Yes.
 simpleicons:
 ```
 
+## Videos
+Here is a video in german by Tristan how to install and use the component: https://youtu.be/vGEgIbVzMYw
+
 ## Special thanks
 
 This work is heavily based on [hass-fontawesome](https://github.com/thomasloven/hass-fontawesome) by Thomas Loven. Thank you!
