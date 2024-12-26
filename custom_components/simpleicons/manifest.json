@@ -1,4 +1,6 @@
 {
+    "domain": "simpleicons",
+    "name": "Simple Icons",
     "codeowners": [],
     "config_flow": true,
     "dependencies": [
@@ -6,8 +8,6 @@
         "frontend"
     ],
     "documentation": "https://github.com/vigonotion/hass-simpleicons",
-    "domain": "simpleicons",
-    "name": "Simple Icons",
     "requirements": [
         "simplepycons==1!13.17.0"
     ],
