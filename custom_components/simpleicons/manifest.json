@@ -8,9 +8,9 @@
         "frontend"
     ],
     "documentation": "https://github.com/vigonotion/hass-simpleicons",
+    "iot_class": "local_polling",
     "requirements": [
         "simplepycons==1!13.17.0"
     ],
-    "version": "0.0.0",
-    "iot_class": "local_polling"
+    "version": "0.0.0"
 }

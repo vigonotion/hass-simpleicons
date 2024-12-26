@@ -3,6 +3,8 @@ from xml.dom.minidom import Document, parseString
 from homeassistant.components.http import StaticPathConfig
 from homeassistant.components.http.view import HomeAssistantView
 from homeassistant.config_entries import SOURCE_IMPORT
+from homeassistant.helpers import config_validation as cv
+
 from simplepycons import all_icons
 
 DOMAIN = "simpleicons"
@@ -12,6 +14,7 @@ ICONS_URL = "/" + DOMAIN + "/"
 ICON_URL = f"/{DOMAIN}/icons"
 ICON_FILES = {"simpleicons": "si.js"}
 
+CONFIG_SCHEMA = cv.config_entry_only_config_schema(DOMAIN)
 
 class IconView(HomeAssistantView):
     requires_auth = False
