@@ -1,8 +1,8 @@
-from homeassistant.config_entries import SOURCE_IMPORT
-from homeassistant.components.http.view import HomeAssistantView
-from homeassistant.components.http import StaticPathConfig
 from xml.dom.minidom import Document, parseString
 
+from homeassistant.components.http import StaticPathConfig
+from homeassistant.components.http.view import HomeAssistantView
+from homeassistant.config_entries import SOURCE_IMPORT
 from simplepycons import all_icons
 
 DOMAIN = "simpleicons"
@@ -11,6 +11,7 @@ DATA_EXTRA_MODULE_URL = "frontend_extra_module_url"
 ICONS_URL = "/" + DOMAIN + "/"
 ICON_URL = f"/{DOMAIN}/icons"
 ICON_FILES = {"simpleicons": "si.js"}
+
 
 class IconView(HomeAssistantView):
     requires_auth = False
@@ -24,7 +25,7 @@ class IconView(HomeAssistantView):
         self.name = "Icon View"
 
     async def get(self, request):
-        return self.json({"path": self.path })
+        return self.json({"path": self.path})
 
 
 class ListView(HomeAssistantView):
@@ -35,7 +36,9 @@ class ListView(HomeAssistantView):
         self.name = "Icons View"
 
     async def get(self, request):
-        return self.json([{"name": icon.prototype.name} for icon in all_icons.__dict__.values()])
+        return self.json(
+            [{"name": icon.prototype.name} for icon in all_icons.__dict__.values()]
+        )
 
 
 async def async_setup(hass, config):

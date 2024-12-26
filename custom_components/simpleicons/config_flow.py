@@ -1,10 +1,9 @@
 import logging
-import voluptuous as vol
 
 from homeassistant import config_entries
-from homeassistant.core import callback
 
 _LOGGER = logging.getLogger(__name__)
+
 
 @config_entries.HANDLERS.register("simpleicons")
 class simpleiconsConfigFlow(config_entries.ConfigFlow):
