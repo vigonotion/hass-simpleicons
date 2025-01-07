@@ -1,16 +1,17 @@
 {
     "domain": "simpleicons",
-    "iot_class": "local_polling",
     "name": "Simple Icons",
-    "documentation": "https://github.com/vigonotion/hass-simpleicons",
+    "codeowners": [],
+    "config_flow": true,
     "dependencies": [
         "http",
         "frontend"
     ],
-    "codeowners": [],
+    "documentation": "https://github.com/vigonotion/hass-simpleicons",
+    "iot_class": "local_polling",
+    "issue_tracker": "https://github.com/vigonotion/hass-simpleicons/issues",
     "requirements": [
         "simplepycons==1!13.17.0"
     ],
-    "config_flow": true,
     "version": "0.0.0"
 }
