@@ -1,7 +1,13 @@
 {
-    "name": "simpleicons",
-    "render_readme": true,
-    "homeassistant": "2021.11.0",
-    "zip_release": true,
-    "filename": "hass-simpleicons.zip"
+  "name": "simpleicons",
+  "render_readme": true,
+  "homeassistant": "2021.11.0",
+  "zip_release": true,
+  "topics": [
+    "icons",
+    "simpleicons",
+    "hacs"
+  ],
+  "issues": "https://github.com/vigonotion/hass-simpleicons/issues",
+  "filename": "hass-simpleicons.zip"
 }
