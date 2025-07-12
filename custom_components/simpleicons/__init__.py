@@ -4,7 +4,6 @@ from homeassistant.components.http import StaticPathConfig
 from homeassistant.components.http.view import HomeAssistantView
 from homeassistant.config_entries import SOURCE_IMPORT
 from homeassistant.helpers import config_validation as cv
-
 from simplepycons import all_icons
 
 DOMAIN = "simpleicons"
@@ -15,6 +14,7 @@ ICON_URL = f"/{DOMAIN}/icons"
 ICON_FILES = {"simpleicons": "si.js"}
 
 CONFIG_SCHEMA = cv.config_entry_only_config_schema(DOMAIN)
+
 
 class IconView(HomeAssistantView):
     requires_auth = False
@@ -57,8 +57,8 @@ async def async_setup(hass, config):
 
     hass.http.register_view(ListView())
 
-    for icon in all_icons.__dict__.values():
-        hass.http.register_view(IconView(icon.prototype.name))
+    for icon in all_icons.names():
+        hass.http.register_view(IconView(icon))
 
     if DOMAIN not in config:
         return True
