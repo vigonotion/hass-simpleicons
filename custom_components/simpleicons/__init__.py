@@ -40,7 +40,7 @@ class ListView(HomeAssistantView):
 
     async def get(self, request):
         return self.json(
-            [{"name": icon.prototype.name} for icon in all_icons.__dict__.values()]
+            [{"name": icon} for icon in all_icons.names()]
         )
 
 
